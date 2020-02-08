@@ -1,0 +1,152 @@
+<!DOCTYPE html lang="en">
+    <head>
+    <title>Game</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="title.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="logo">
+            <div class="container">
+                <i class="far fa-eye" id="logo"></i>
+                <h1 id="quiz">301 QI</h1>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="container">
+                <div>
+                    <button class="start">
+                        <p>Start</p>
+                    </button>
+                </div>
+                    <button>
+                        <p>Options</p> 
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <p>About</p> 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="config">
+            <div class="container">
+                <p id="escolha">Choose your quiz type</p>
+                <div class="teste">
+                    <div class="dificuldade">
+                        <p>Select Difficulty</p>
+                        <select id="dificuldades">
+                            <option></option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>   
+                    <div class="categoria">
+                        <p>Select Category</p>
+                        <select class="form-control" id="categorias">
+                            <option></option>
+                        </select>
+                    </div> 
+                </div>
+                <button id="comecar">Play</button>
+            </div>
+        </div>
+
+        <div class="point">
+            <div class="container">
+                <div class="score">
+                    <h3>Score: 0 Vida: 3</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="time-bar">
+            <div class="container">
+                <div class="tempo">
+                    <h3 id="seg">Tempo</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="jogo">
+            <div class="container">
+                <div class="teste">
+                    <div class="pergunta">
+                        <h2>Question</h2>
+                        <p id="ask">Loading...</p>
+                    </div> 
+                    <div class="alternativas">
+                        <h2>Alternatives</h2>
+                        <div class="alt">
+                            <input class="form-check-input" type="radio" name="alternativa" id="alternativa" value="alternativa">
+                            <label class="form-check-label">
+                                Loading...
+                            </label>
+                        </div>
+                        <div class="alt">
+                            <input class="form-check-input" type="radio" name="alternativa" id="alternativa" value="alternativa">
+                            <label class="form-check-label">
+                                Loading...
+                            </label>
+                        </div>
+                        <div class="alt">
+                            <input class="form-check-input" type="radio" name="alternativa" id="alternativa" value="alternativa">
+                            <label class="form-check-label">
+                                Loading...
+                            </label>
+                        </div>                      
+                        <div class="alt">
+                            <input class="form-check-input" type="radio" name="alternativa" id="alternativa" value="alternativa">
+                            <label class="form-check-label">
+                                Loading...
+                            </label>
+                        </div>    
+                        <button id="next"><p>Reply Later</p></button>
+                        <button id="confirm"><p>Confirm</p></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container">
+                <div class="informacao">
+                    <p id="status"></p>
+                    <button id="quit"><p>Restart</p></button>
+                    <button id="saved" onclick="respNext()"><p>Reply Later</p></button>
+                    <button id="continue" onclick="continuar()"><p>Continue</p></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gameover">
+            <div class="container">
+                <div class="fim">
+                    <p id="txtfim">Game Over!</p>
+                    <p id="acertos"></p>
+                    <p id="erros"></p>
+                    <p id="pt"></p>
+                    <button id="again">Restart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading">
+            <div class="container">
+                <div class="load"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="index.js"></script>
+    </body>
+</html>

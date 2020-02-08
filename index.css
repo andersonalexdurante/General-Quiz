@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background: radial-gradient(ellipse at bottom, #2c4664 0%,#090a0f 100%);
+}
+
+@keyframes treme{
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+}
+
+#confirm{
+    background-color: #42f578;
+}
+
+#next{
+    display: inline;
+    background-color: #ddf542;
+}
+
+#logo{
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 4px 4px 4px #a122a5;
+}
+
+#quiz{
+    width: 100%;
+    color: rgb(255, 0, 64);
+    text-align: center;
+    font-size: 30px;
+    animation: treme 0.7s;
+    animation-iteration-count: 3;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#comecar{
+    text-align:center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 25px;    
+}
+
+#escolha{
+    width: 100%;
+    text-align:center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 4px 4px 4px #a122a5;
+}
+
+#categorias{
+    font-size: 15px;
+}
+
+#ask{
+    font-size: 25px;
+}
+
+#saved, .loading{
+    display: none;
+}
+
+#pt{
+    margin-bottom: 30px;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.menu div{
+    width: 100%;
+    display:block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu button{
+    width: 50%;
+    padding: 10px;
+}
+
+.menu button p{
+    text-shadow: 2px 2px 2px #a122a5;
+}
+
+button{
+    padding: 4px 0;
+    background-color: rgb(147, 35, 252);
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.config{
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.dificuldade p{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.teste select{
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+}
+
+.dificuldade div{
+    padding: 6px;
+}
+
+
+.categoria p{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.categoria div{
+    padding: 5px;
+}
+
+.teste{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pergunta, .alternativas, .categoria, .dificuldade{
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(147, 35, 252);
+    padding: 20px;
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pergunta h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.alternativas h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.alternativas div{
+    padding: 5px;
+}
+
+.alternativas label{
+    font-size: 25px;
+}
+
+.alternativas button{
+    color: black;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.point, .time-bar, .jogo{
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.point, #escolha{
+    margin-top: 100px;
+}
+
+.score, .tempo{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    color: rgb(0, 110, 255);
+    text-shadow: 3px 3px 3px #adadad;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info{
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.informacao{
+    border: 2px solid;
+    color: rgb(0, 110, 255);
+    width: 100%;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(255, 81, 0);
+    margin-top: 150px;
+    padding: 20px;
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 4px 4px#a122a5;
+    font-weight:bold;
+}
+
+.informacao p{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.gameover{
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.fim{
+    font-size: 35px;
+    border: 2px solid;
+    color: rgb(0, 110, 255);
+    width: 100%;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(30, 38, 80);
+    margin-top: 150px;
+    padding: 20px;
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 3px #a122a5;
+}
+
+.load{
+    margin-top: 150px;
+    border: 2px solid;
+    color: rgb(0, 110, 255);
+    width: 100%;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 3px #a122a5;
+}
+
+@media screen and (max-width: 570px) {
+    .logo{
+        margin-top: 30px;
+    }
+  
+    .menu div{
+        width: 100%;
+        display:block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .menu button{
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .dificuldade, .categoria, .pergunta, .alternativas{
+        width: 100%;
+    }
+
+    .dificuldade, .pergunta{
+        margin-bottom: 20px;
+    }
+
+    .dificuldade select{
+        padding: 10px;
+    }
+
+    .informacao button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #escolha{
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    .point{
+        margin-top: 0px;
+    }
+
+    .score, .tempo{
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .jogo{
+        margin-bottom:0px;
+    }
+
+    .categoria p{
+        font-size: 35px;
+    }
+
+    .categoria select{
+        padding: 10px;
+    }
+
+    .dificuldade p{
+        font-size: 35px;
+    }
+
+    .load{
+        margin-top: 240px;
+    }
+}
